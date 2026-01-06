@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Original Luxury | Brand Catalogs</title>
+  <link rel="stylesheet" href="/static/css/catalog.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="title">Original Luxury</div>
+        <div class="subtitle">Brand Catalog PDFs</div>
+      </div>
+
+      <div class="controls">
+        <input id="brandSearch" type="search" placeholder="Search brand…" autocomplete="off" />
+        <button id="refreshBtn" type="button">Refresh</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-meta">
+        <div id="countLabel" class="count">Loading…</div>
+        <div id="statusLabel" class="status"></div>
+      </div>
+
+      <ul id="brandList" class="brand-list"></ul>
+    </aside>
+
+    <main class="viewer">
+      <div class="viewer-toolbar">
+        <div class="viewer-title" id="viewerTitle">Select a brand</div>
+        <div class="viewer-actions">
+          <a id="openNewTab" href="#" target="_blank" rel="noopener noreferrer" class="link-btn disabled">Open in new tab</a>
+          <button id="copyLink" type="button" class="link-btn disabled">Copy link</button>
+        </div>
+      </div>
+
+      <div class="viewer-frame-wrap">
+        <iframe id="pdfFrame" class="pdf-frame" title="Brand PDF Viewer"></iframe>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/js/catalog.js"></script>
+</body>
+</html>

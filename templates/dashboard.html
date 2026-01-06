@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Original Luxury — Dashboard</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+
+  <body>
+    <h1>Original Luxury Dashboard</h1>
+
+    <div class="row">
+      <input id="q" placeholder="Search MSKU or product name" />
+      <input id="brand" placeholder="Brand (exact match)" />
+
+      <button id="btnSearch" type="button">Search</button>
+      <button id="btnReset" type="button">Reset</button>
+
+      <span class="right muted" id="status">—</span>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Brand</th>
+          <th>Product</th>
+          <th>MSKU</th>
+          <th>Price</th>
+          <th>Sizes / Colors</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <!-- External JS -->
+    <script src="/static/js/scripts.js" defer></script>
+  </body>
+</html>
