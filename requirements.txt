@@ -5,3 +5,4 @@ supabase
 httpx
 beautifulsoup4
 lxml
+jinja2
